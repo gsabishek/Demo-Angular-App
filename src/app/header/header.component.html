@@ -1,0 +1,25 @@
+<nav class="navbar position-fixed p-0">
+	<div class="full-width">
+		<div class="navbar-header d-flex">
+			<input type="checkbox" id="hamburger"/>
+			<svg-icon class="hamburger-label" for="hamburger" src="assets/icons/menu.svg" ></svg-icon>
+			<h3 href="#">Demo</h3>
+		    <div class="collapse navbar-collapse d-block" id="navbarsExampleCenteredNav">
+			      <ul class="navbar-nav float-right">
+			        <li class="nav-item dropdown">
+			          <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="userinfo" data-toggle="dropdown">
+			            <img src="{{profileImage}}" />
+			          </a>	
+			          <div class="dropdown-menu">            
+			            <span class="dropdown-item userarea">
+			              <span class="profile-name d-block">Demo User</span>             			   
+			            </span>			          
+			            <span class="dropdown-item">My Profile</span>			          
+			            <span class="dropdown-item" (click)="logout()">Logout </span>
+			          </div>		        
+			        </li>
+			      </ul>
+   		    </div>
+		</div>
+	</div>
+</nav>
